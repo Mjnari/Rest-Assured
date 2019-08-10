@@ -1,18 +1,34 @@
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class Basics {
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class GetBasics {
+	
+	Properties prop = new Properties();
+	
+	@BeforeTest
+	public void getEnv() throws IOException {
+		FileInputStream fis = new FileInputStream("C:\\Users\\richm\\eclipse-workspace\\Rest-Assured1\\src\\files\\env.properties");
+		prop.load(fis);
+	}
 
 	@Test
 	public void Test() {
 
 		// Base url or host
-		RestAssured.baseURI = "https://maps.googleapis.com";
+		RestAssured.baseURI = prop.getProperty("HOST");
 
+		// testing get
 		given().param("location", "-33.8670522,151.1957362").param("radius", "500")
 				.param("key", "AIzaSyAPtvrphF0bR2Wa4sEReomaCUzKpkYXdHI").when().get("/maps/api/place/nearbysearch/json")
 				.then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and()
@@ -22,7 +38,7 @@ public class Basics {
 
 		System.out.println("work");
 
-		// header and body example
+		// header, cookie, and body example
 		// .header("headerKey","headerValue").cookie("key", "value").body("body");
 	}
 

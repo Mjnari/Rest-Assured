@@ -1,1 +1,6 @@
+General:
+The API key is setup to only work with a specific IP address
 equalTo() only needs to be done on body()
+
+Post:
+Google has removed their Add API (or at least it was removed when the class I am taking was made), so the instructor set up this page to be used. It is identical to what the google api was
