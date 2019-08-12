@@ -18,7 +18,7 @@ import java.util.Properties;
 
 import files.Resources;
 import files.Payload;
-import files.Utils;
+import files.ReusableMethods;
 
 public class PostBasicsXmlFormat {
 
@@ -48,7 +48,7 @@ public class PostBasicsXmlFormat {
 		
 		// in the course the google api was returning XML, but since we have to use this url, which returns an empty JSON, the below code does not work
 		/*
-		 *  XmlPath x = Utils.rawToXML(res);
+		 *  XmlPath x = ReusableMethods.rawToXML(res);
 		 *  System.out.println(x.get("PlaceAddResponse.place_id").toString());
 		 */
 	}

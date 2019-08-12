@@ -2,20 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-11T19:05:32Z" name="Default suite" finished-at="2019-08-11T19:05:33Z" duration-ms="1744">
+  <suite started-at="2019-08-12T00:10:09Z" name="Default suite" finished-at="2019-08-12T00:10:12Z" duration-ms="2419">
     <groups>
     </groups>
-    <test started-at="2019-08-11T19:05:32Z" name="Default test" finished-at="2019-08-11T19:05:33Z" duration-ms="1744">
-      <class name="PostBasicsXmlFormat">
-        <test-method is-config="true" signature="getEnv()[pri:0, instance:PostBasicsXmlFormat@291b4bf5]" started-at="2019-08-11T15:05:32Z" name="getEnv" finished-at="2019-08-11T15:05:32Z" duration-ms="6" status="PASS">
+    <test started-at="2019-08-12T00:10:09Z" name="Default test" finished-at="2019-08-12T00:10:12Z" duration-ms="2419">
+      <class name="GetBasics2">
+        <test-method is-config="true" signature="getEnv()[pri:0, instance:GetBasics2@68e5eea7]" started-at="2019-08-11T20:10:09Z" name="getEnv" finished-at="2019-08-11T20:10:09Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnv -->
-        <test-method signature="Test()[pri:0, instance:PostBasicsXmlFormat@291b4bf5]" started-at="2019-08-11T15:05:32Z" name="Test" finished-at="2019-08-11T15:05:33Z" duration-ms="1722" status="PASS">
+        <test-method signature="Test()[pri:0, instance:GetBasics2@68e5eea7]" started-at="2019-08-11T20:10:09Z" name="Test" finished-at="2019-08-11T20:10:12Z" duration-ms="2398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
-      </class> <!-- PostBasicsXmlFormat -->
+      </class> <!-- GetBasics2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
