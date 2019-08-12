@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="PostBasicsXmlFormat">
+      <class name="ExcelDriven">
         <methods>
+          <include name="addBook"/>
           <include name="getEnv"/>
-          <include name="Test"/>
         </methods>
-      </class> <!-- PostBasicsXmlFormat -->
+      </class> <!-- ExcelDriven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
